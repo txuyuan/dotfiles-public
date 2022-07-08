@@ -1,6 +1,6 @@
 # Xuyuan's Dotfiles
 
-** Don't blindly use my config unless you know what that entails. Use at your own risk. **
+**WARNING**: Don't blindly use my config unless you know what that entails. Use at your own risk.
 
 ## Contents
 
@@ -54,4 +54,3 @@
 - Zsh Shell
 - PowerLevel10k - Theme for Zsh, emphasising speed, flexibility and out-of-the-box experience
 - Nerd fonts - Powerline-patched fonts, I use jetbrains-mono
-
