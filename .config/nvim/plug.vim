@@ -7,11 +7,14 @@ call plug#begin()
 if has("nvim")
   " File utils
   Plug 'tpope/vim-fugitive'
+  Plug 'lewis6991/gitsigns.nvim'
   Plug 'tpope/vim-rhubarb'
   Plug 'lambdalisue/suda.vim'
 
   " LSP & Completion
-  Plug 'williamboman/nvim-lsp-installer'
+  Plug 'williamboman/mason.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
+
   Plug 'neovim/nvim-lspconfig'
   Plug 'tami5/lspsaga.nvim'
   Plug 'folke/lsp-colors.nvim'
