@@ -14,6 +14,7 @@ if has("nvim")
   " LSP & Completion
   Plug 'williamboman/mason.nvim'
   Plug 'williamboman/mason-lspconfig.nvim'
+  Plug 'rhysd/vim-clang-format'
 
   Plug 'neovim/nvim-lspconfig'
   Plug 'tami5/lspsaga.nvim'
