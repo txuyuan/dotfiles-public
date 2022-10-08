@@ -99,7 +99,7 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 -- Vanilla mount some servers
-local servers = { "html", "volar", "jsonls", "cssls", "tailwindcss", "pyright", "sumneko_lua", "gopls", "intelephense", "kotlin_language_server", "dockerls" , "vimls" }
+local servers = { "html", "volar", "jsonls", "cssls", "tailwindcss", "pyright", "sumneko_lua", "gopls", "intelephense", "kotlin_language_server", "dockerls" , "vimls", "bashls" }
 for _, lsp in pairs(servers) do 
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
