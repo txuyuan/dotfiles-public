@@ -31,8 +31,8 @@ if has("nvim")
   Plug 'windwp/nvim-ts-autotag'
   Plug 'mattn/emmet-vim'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
-  
+  " Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production', 'branch': 'release/0.x' }
+
   " NVim UI
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'

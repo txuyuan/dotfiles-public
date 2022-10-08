@@ -88,7 +88,6 @@ end
 local capabilities = require('cmp_nvim_lsp').update_capabilities(
   vim.lsp.protocol.make_client_capabilities()
 )
-
 nvim_lsp.flow.setup {
   on_attach = on_attach,
   capabilities = capabilities
@@ -99,8 +98,26 @@ nvim_lsp.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   capabilities = capabilities
 }
+-- Vanilla mount some servers
+local servers = { "html", "volar", "jsonls", "cssls", "tailwindcss", "pyright", "sumneko_lua", "gopls", "intelephense", "kotlin_language_server", "dockerls" , "vimls" }
+for _, lsp in pairs(servers) do 
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
 
-
+-- nvim_lsp.pyright.setup {
+--   on_attach = on_attach,
+--   filetypes = { "python" },
+--   capabilities = capabilities,
+-- }
+-- 
+-- nvim_lsp.volar.setup {
+--   on_attach = on_attach,
+--   filetypes = { "vue" },
+--   capabilities = capabilities,
+-- }
 
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
