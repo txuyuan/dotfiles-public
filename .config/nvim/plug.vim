@@ -38,6 +38,7 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'ellisonleao/glow.nvim', {'branch': 'main'} " markdown preview
   Plug 'goolord/alpha-nvim'
+  Plug 'karb94/neoscroll.nvim'
 
   " Aesthetics
   Plug 'nvim-lualine/lualine.nvim' 
